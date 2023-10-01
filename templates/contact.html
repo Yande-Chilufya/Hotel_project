@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: {{ phone }}</p>
+        <p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <h3>Location</h3>
+        {{ map|safe }}
+    </section>
+{% endblock%}
+</body>
+</html>
